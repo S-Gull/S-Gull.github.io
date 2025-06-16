@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body id="login" class="bg-light">
+    <!-- Login Form -->
+    <main class="px-4 sm:px-0">
+        <div class="w-full min-h-screen flex justify-center items-center py-8">
+            <div class="flex flex-col md:flex-row w-full max-w-4xl rounded-xl overflow-hidden shadow-2xl">
+                <!-- Left Panel -->
+                <div class="bg-dark w-full md:w-5/12 p-8 md:p-12 flex flex-col justify-center items-center">
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="bg-primary p-3 rounded-full mr-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
+                            </svg>
+                        </div>
+                        <h1 class="text-3xl font-bold text-white">Baldox</h1>
+                    </div>
+                    <p class="text-gray-300 text-center text-sm mt-4">
+                        Welcome back! Please login to access your account and manage your finances.
+                    </p>
+                </div>
+                
+                <!-- Right Panel -->
+                <div class="bg-white w-full md:w-7/12 p-8 sm:p-12">
+                    <h1 class="font-bold text-3xl text-dark">Login</h1>
+                    <p class="mt-4 text-gray">
+                        Don't have an account? 
+                        <a href="./register.html" class="font-semibold text-primary hover:text-primary-dark transition">Create your account</a>
+                    </p>
+                    <form action="">
+                    <div class="form flex flex-col mt-8 space-y-6">
+                        <div>
+                            <label class="block text-gray text-sm font-medium mb-1">Email</label>
+                            <input id="correo" type="email" placeholder="your.email@example.com" 
+                                   class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition">
+                        </div>
+                        
+                        <div class="relative">
+                            <label class="block text-gray text-sm font-medium mb-1">Password</label>
+                            <input id="clave" type="password" placeholder="••••••••" 
+                                   class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition pr-10">
+                            <button type="button" id="togglePassword" class="absolute right-3 bottom-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray eye-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <div class="flex flex-col sm:flex-row justify-between items-center">
+                            <div class="flex items-center mb-3 sm:mb-0">
+                                <input type="checkbox" id="remember" class="h-4 w-4 text-primary rounded focus:ring-primary">
+                                <label for="remember" class="ml-2 text-gray text-sm">Remember Me</label>
+                            </div>
+                            <a href="#" class="text-primary text-sm hover:text-primary-dark transition">Forgot Password?</a>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-4 rounded-lg transition duration-300 transform hover:scale-[1.02]">
+                            Login
+                        </button>
+                        </form>
+                        
+                        <a href="./index.html" class="block mt-6 text-center text-primary font-semibold text-sm hover:text-primary-dark transition">
+                            ← Back to Homepage
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script type="module" src="./js/app.js"></script>
+</html>
