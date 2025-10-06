@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./img/BALDOX LOGO.jpg">
-  <title>Baldox | Solución de Nóminas para PYMES</title>
+  <title>Baldox | Solución de Nóminas</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./css/tailwind.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Verdana&display=swap" rel="stylesheet">
-</head>
+  <link rel="stylesheet" href="./css/modal.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" /></head>
 <body id="landing" class="antialiased">
-  <!-- Header con animaciones y botón modo oscuro -->
+  <!-- Header con animaciones-->
   <header id="inicio" class="header relative lg:overflow-hidden organic-bg">
     <div class="absolute inset-0 z-negative opacity-5 bg-accent1"></div>
 
@@ -36,19 +36,22 @@
             <a href="#inicio" class="font-inter font-medium nav-link">Inicio</a>
           </li>
           <li class="md:px-4 py-2">
-            <a href="#servicios" class="nav-link">Servicios</a>
-          </li>
-          <li class="md:px-4 py-2">
             <a href="#quienes-somos" class="nav-link">Quiénes Somos</a>
           </li>
           <li class="md:px-4 py-2">
             <a href="#desafios" class="nav-link">Desafíos de Nómina</a>
           </li>
+           <li class="md:px-4 py-2">
+            <a href="#servicios" class="nav-link">Servicios</a>
+          </li>
+          <li class="md:px-4 py-2">
+            <a href="#Testimonios" class="nav-link">Testimonios</a>
+          </li>
           <li class="md:px-4 py-2">
             <a href="#contacto" class="nav-link">Contacto</a>
           </li>
           <li class="md:px-4 py-2">
-            <a href="./login.html" class="btn-primary px-8 py-3 rounded-lg font-inter font-medium inline-block bg-accent1 hover:bg-accent2">Iniciar Sesión</a>
+            <a href="#" class="btn-primary px-8 py-3 rounded-lg font-inter font-medium inline-block bg-accent1 hover:bg-accent2">Descargar</a>
           </li>
         </ul>
       </div>
@@ -58,13 +61,13 @@
       <div class="md:pl-8">
         <p class="text-accent2 tracking-wide text-base font-light leading-none animate-fade-in">Simplificando la gestión de nóminas</p>
         <h1 class="hero-title font-inter text-primary md:text-6xl text-4xl font-bold m-0 md:leading-tight leading-tight mt-4">
-          Software de nóminas para PYMES en Venezuela
+          Software de nóminas en Venezuela
         </h1>
         <p class="text-secondary text-lg md:max-w-xl w-full my-6 animate-fade-in">
           Automatiza tus procesos, garantiza cumplimiento legal y enfócate en el crecimiento estratégico de tu empresa con nuestra solución todo-en-uno.
         </p>
         <div class="flex flex-wrap gap-4">
-          <a href="./register.html" class="btn-primary px-8 py-3 rounded-lg font-inter font-medium inline-block bg-accent1 hover:bg-accent2">Descubre Más</a>
+          <a href="#" class="btn-primary px-8 py-3 rounded-lg font-inter font-medium inline-block bg-accent1 hover:bg-accent2">Descubre Más</a>
       </div>
     </div>
   </header>
@@ -94,7 +97,7 @@
           <div class="bg-white dark:bg-dark-800 p-6 rounded-xl shadow-md">
             <h3 class="font-inter text-xl font-semibold mb-3 text-accent2">Nuestra Visión</h3>
             <p class="text-secondary">
-              Ser la solución de software de gestión empresarial preferida para PYMES en Venezuela, reconocida por 
+              Ser la solución de software de gestión empresarial preferida en Venezuela, reconocida por 
               transformar la eficiencia operativa y el cumplimiento legal en un motor de crecimiento sostenido.
             </p>
           </div>
@@ -110,6 +113,81 @@
                     </div>
                 </div>
             </div>
+      </div>
+    </div>
+  </section>
+    <!-- Sección de Desarrolladores -->
+  <section id="desarrolladores" class="py-16 bg-white dark:bg-dark-800">
+    <div class="container mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-16 animate-fade-in">
+        <h2 class="font-inter text-4xl font-bold mb-4">Nuestros Desarrolladores</h2>
+        <p class="text-secondary">Los talentosos creadores detrás de esta plataforma</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+        <!-- Tarjeta 1: Victor Contreras -->
+        <div class="developer-card bg-light dark:bg-dark-700 rounded-2xl p-8 shadow-lg relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-accent1 to-accent2"></div>
+          
+          <div class="flex flex-col items-center">
+            <!-- Imagen redonda centrada -->
+            <div class="mb-6 rounded-full overflow-hidden border-4 border-accent1 w-32 h-32 flex items-center justify-center shadow-lg developer-img">
+              <img src="./img/Victor.png" alt="Victor Contreras" class="w-full h-full object-cover">
+            </div>
+            
+            <h3 class="font-inter text-2xl font-bold mb-2 text-primary">Victor Contreras</h3>
+            <p class="text-accent1 font-medium mb-4">Desarrollador FullStack</p>
+            
+            <div class="text-secondary mb-4">
+              <p class="mb-2"><span class="font-semibold">Matrícula:</span> 30.520.132</p>
+            </div>
+            
+            <div class="flex space-x-4 mt-2">
+              <a href="#" class="text-gray-500 hover:text-accent1 transition-colors">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-accent1 transition-colors">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Tarjeta 2: Guillermo Álvarez -->
+        <div class="developer-card bg-light dark:bg-dark-700 rounded-2xl p-8 shadow-lg relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-accent1 to-accent2"></div>
+          
+          <div class="flex flex-col items-center">
+            <!-- Imagen redonda centrada -->
+            <div class="mb-6 rounded-full overflow-hidden border-4 border-accent1 w-32 h-32 flex items-center justify-center shadow-lg developer-img">
+              <img src="./img/Guillermo.png" alt="Guillermo Álvarez" class="w-full h-full object-cover">
+            </div>
+            
+            <h3 class="font-inter text-2xl font-bold mb-2 text-primary">Guillermo Álvarez</h3>
+            <p class="text-accent1 font-medium mb-4">Desarrollador FullStack</p>
+            
+            <div class="text-secondary mb-4">
+              <p class="mb-2"><span class="font-semibold">Matrícula:</span> 30.165.318</p>
+            </div>
+            
+            <div class="flex space-x-4 mt-2">
+              <a href="#" class="text-gray-500 hover:text-accent1 transition-colors">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-accent1 transition-colors">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -164,7 +242,6 @@
       </div>
       
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Sección modificada: añadida clase service-card a cada tarjeta -->
         <div class="challenge-card service-card bg-light dark:bg-dark-700 rounded-xl p-6 shadow-md">
           <div class="w-16 h-16 rounded-full bg-accent1 flex items-center justify-center mx-auto mb-4 animate-pulse-slow">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -233,7 +310,7 @@
           </div>
           <h3 class="font-inter text-xl font-semibold mb-2 text-center">Altos Costos</h3>
           <p class="text-secondary text-center">
-            Soluciones complejas diseñadas para grandes empresas tienen costos prohibitivos para PYMES.
+            Soluciones complejas diseñadas para grandes empresas tienen costos prohibitivos.
           </p>
         </div>
       </div>
@@ -241,7 +318,7 @@
       <div class="mt-16 p-8 bg-accent1 rounded-xl text-white text-center max-w-3xl mx-auto">
         <h3 class="font-inter text-2xl font-bold mb-4">¿Cómo enfrentamos estos desafíos?</h3>
         <p class="mb-6">
-          En Baldox hemos desarrollado una solución específica para las necesidades de las PYMES venezolanas, 
+          En Baldox hemos desarrollado una solución específica para las necesidades de las empresas venezolanas, 
           combinando tecnología avanzada con soporte local especializado.
         </p>
         <a href="#servicios" class="bg-white text-accent2 px-6 py-3 rounded-lg font-inter font-medium inline-block hover:bg-light">Conoce nuestra solución</a>
@@ -250,7 +327,7 @@
   </section>
 
   <!-- Servicios -->
-  <section id="servicios" class="py-16 bg-accent2 bg-opacity-10 dark:bg-dark-700">
+  <section id="servicios" class="py-16 bg-white dark:bg-dark-800 ">
     <div class="container mx-auto px-4">
       <div class="text-center max-w-2xl mx-auto mb-16 animate-fade-in">
         <h2 class="font-inter text-4xl font-bold mb-4">Nuestros Servicios</h2>
@@ -258,17 +335,17 @@
       </div>
       
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="service-card bg-white dark:bg-dark-800 rounded-xl p-6 shadow-md">
+        <div class="service-card bg-light dark:bg-dark-700 rounded-xl p-6 shadow-md">
           <div class="text-accent1 mb-4">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
             </svg>
           </div>
           <h3 class="font-inter text-xl font-semibold mb-2">Venta y Licenciamiento</h3>
-          <p class="text-secondary mb-4">Solución unificada para nóminas, RRHH, ventas e inventario. Acceso web y opciones de escritorio multiplataforma.</p>
+          <p class="text-secondary mb-4">Solución unificada para nóminas. Acceso web y opciones de escritorio multiplataforma.</p>
         </div>
         
-        <div class="service-card bg-white dark:bg-dark-800 rounded-xl p-6 shadow-md">
+        <div class="service-card bg-light dark:bg-dark-700 rounded-xl p-6 shadow-md">
           <div class="text-accent1 mb-4">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -279,7 +356,7 @@
           <p class="text-secondary mb-4">Migración de datos y configuración personalizada según las necesidades de tu empresa.</p>
         </div>
         
-        <div class="service-card bg-white dark:bg-dark-800 rounded-xl p-6 shadow-md">
+        <div class="service-card bg-light dark:bg-dark-700 rounded-xl p-6 shadow-md">
           <div class="text-accent1 mb-4">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 01112 0v1H3v-1z" />
@@ -291,21 +368,146 @@
       </div>
     </div>
   </section>
+<!-- Sección Testimonios -->
+ <section id="testimonios" class="py-16 bg-white dark:bg-dark-800">
+  <div class="container mx-auto px-4 max-w-5xl">
+    <div class="text-center mb-12">
+      <h2 class="font-inter text-4xl font-bold mb-4 text-primary">Lo que dicen nuestros clientes</h2>
+      <p class="text-secondary max-w-2xl mx-auto">Testimonios reales de empresas que han mejorado su gestión con Baldox</p>
+    </div>
+    <div id="testimonios-contenedor" class="grid md:grid-cols-3 gap-8">
+      <!-- Aquí se insertarán los testimonios -->
+    </div>
+  </div>
+</section>
 
-  <!-- Footer actualizado -->
-  <footer id="contacto" class="bg-light dark:bg-dark-800 py-12">
+
+  <!-- Sección de Contacto -->
+<section id="contacto" class="py-16 bg-white dark:bg-dark-800">
+  <div class="container mx-auto px-4">
+    <div class="text-center max-w-2xl mx-auto mb-16 animate-fade-in">
+      <h2 class="font-inter text-4xl font-bold mb-4">Contáctanos</h2>
+      <p class="text-secondary">¿Tienes alguna pregunta? Escríbenos y te responderemos a la brevedad</p>
+    </div>
+    
+    <div class="flex flex-wrap">
+      <!-- Formulario -->
+      <div class="w-full lg:w-1/2 lg:pr-8 mb-8 lg:mb-0">
+        <form id="contactForm" method="POST" class="bg-light dark:bg-dark-700 rounded-xl p-8 shadow-md">
+          <div class="mb-6">
+            <label for="name" class="block text-primary dark:text-white font-inter font-medium mb-2">Nombre completo</label>
+            <input type="text" id="name" name="name" required 
+                   class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent1 bg-white dark:bg-dark-800 text-secondary dark:text-gray-300">
+          </div>
+          
+          <div class="mb-6">
+            <label for="email" class="block text-primary dark:text-white font-inter font-medium mb-2">Correo electrónico</label>
+            <input type="email" id="email" name="email" required 
+                   class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent1 bg-white dark:bg-dark-800 text-secondary dark:text-gray-300">
+          </div>
+          
+          <div class="mb-6">
+            <label for="message" class="block text-primary dark:text-white font-inter font-medium mb-2">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required 
+                      class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent1 bg-white dark:bg-dark-800 text-secondary dark:text-gray-300"></textarea>
+          </div>
+          
+          <button type="submit" 
+                  class="btn-primary px-8 py-3 rounded-lg font-inter font-medium inline-block bg-accent1 hover:bg-accent2 text-white w-full">
+            Enviar Mensaje
+          </button>
+          
+          <div id="formMessage" class="mt-4 text-center hidden"></div>
+        </form>
+      </div>
+      
+      <!-- Información de contacto -->
+      <div class="w-full lg:w-1/2">
+        <div class="bg-light dark:bg-dark-700 rounded-xl p-8 shadow-md h-full">
+          <h3 class="font-inter text-xl font-semibold mb-6 text-accent2">Otras formas de contacto</h3>
+          
+          <div class="flex items-start mb-6">
+            <div class="w-12 h-12 rounded-full bg-accent1 bg-opacity-20 flex items-center justify-center mr-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-inter font-medium text-primary dark:text-white mb-1">Teléfono</h4>
+              <p class="text-secondary">58 212 878 9632</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start mb-6">
+            <div class="w-12 h-12 rounded-full bg-accent1 bg-opacity-20 flex items-center justify-center mr-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-inter font-medium text-primary dark:text-white mb-1">Correo electrónico</h4>
+              <p class="text-secondary">info@baldox.com</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start mb-6">
+            <div class="w-12 h-12 rounded-full bg-accent1 bg-opacity-20 flex items-center justify-center mr-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-inter font-medium text-primary dark:text-white mb-1">Dirección</h4>
+              <p class="text-secondary">C4QQ+3H3, C. del Arenal, Caracas 1080, Miranda</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="w-12 h-12 rounded-full bg-accent1 bg-opacity-20 flex items-center justify-center mr-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-inter font-medium text-primary dark:text-white mb-1">Horario de atención</h4>
+              <p class="text-secondary">Lunes a Viernes: 8:00 AM - 5:00 PM</p>
+              <p class="text-secondary">Sábados: 9:00 AM - 12:00 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Sección de Geolocalización / Mapa -->
+    <section  class="py-16 bg-white dark:bg-dark-800">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-8">
+          <h2 class="title-font text-3xl font-bold mb-2 text-[#72B01D]">
+            Nuestra Ubicación
+          </h2>
+          <p class="body-font max-w-2xl mx-auto text-black">
+            Encuéntranos en el mapa o visítanos en nuestra oficina virtual.
+          </p>
+        </div>
+        <div id="map" class="w-full h-[500px] z-0 rounded-2xl shadow-xl"></div>
+      </div>
+    </section>
+<!-- Footer -->
+   <footer class="bg-light dark:bg-dark-800 py-12">
     <div class="container mx-auto px-4">
       <div class="footer-container">
         <!-- Sección 1: Logo y descripción -->
         <div class="footer-section">
-          <a href="#inicio" class="flex items-center logo mb-4">
+           <a href="#inicio" class="flex items-center logo mb-4">
             <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-accent1 flex items-center justify-center mr-3">
               <img src="./img/BALDOX LOGO.jpg" alt="Baldox Logo" class="w-full h-full object-cover">
             </div>
             <span class="text-2xl font-bold font-inter text-primary">BALDOX</span>
           </a>
           <p class="text-secondary mb-4">
-            Soluciones tecnológicas para la gestión de nóminas en Venezuela, diseñadas específicamente para las necesidades de las PYMES.
+            Soluciones tecnológicas avanzadas para la gestión empresarial en Venezuela, diseñadas para optimizar procesos de gestión de nomina.
           </p>
           <div class="flex items-center">
             <a href="#" class="mr-3 text-accent1 hover:text-accent2">
@@ -331,10 +533,14 @@
           <h3 class="font-inter text-lg font-semibold mb-4 text-accent2">Enlaces Rápidos</h3>
           <ul class="text-secondary">
             <li class="mb-2"><a href="#inicio" class="hover:text-accent1 transition-colors">Inicio</a></li>
-            <li class="mb-2"><a href="#servicios" class="hover:text-accent1 transition-colors">Servicios</a></li>
             <li class="mb-2"><a href="#quienes-somos" class="hover:text-accent1 transition-colors">Quiénes Somos</a></li>
             <li class="mb-2"><a href="#desafios" class="hover:text-accent1 transition-colors">Desafíos de Nómina</a></li>
-            <li><a href="./login.html" class="hover:text-accent1 transition-colors">Iniciar Sesión</a></li>
+            <li class="mb-2"><a href="#servicios" class="hover:text-accent1 transition-colors">Servicios</a></li>
+            <li class="mb-2"><a href="#testimonios" class="hover:text-accent1 transition-colors">Testimonios</a></li>
+            <li class="mb-2"><a href="#contacto" class="hover:text-accent1 transition-colors">Contacto</a></li>
+            <!-- Estos es Temporal -->
+            <li class="mb-2"><a href="./php/comprobacion_clave_temporal.php" class="hover:text-accent1 transition-colors">Comprobar Clave Temporal</a></li> 
+
           </ul>
         </div>
         
@@ -347,13 +553,13 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
               </svg>
-              <span>Carr. de Alto Hatillo, Torre Q, piso 4 oficina 3</span>
+              <span> <a href="https://maps.app.goo.gl/EJy9aHDonsKmadNw7">C4QQ+3H3, C. del Arenal, Caracas 1080, Miranda</a></span>
             </li>
             <li>
               <svg class="w-5 h-5 text-accent1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
               </svg>
-              <span>+58 212 878 9632</span>
+              <span>58 212 878 9632</span>
             </li>
             <li>
               <svg class="w-5 h-5 text-accent1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -365,11 +571,52 @@
         </div>
       </div>
       
-      <div class="border-t border-gray-200 dark:border-gray-700 mt-8 pt-6 text-center">
-        <p class="text-secondary text-sm">&copy; 2023 Baldox. Todos los derechos reservados.</p>
-      </div>
+      <!-- Sección inferior con copyright e información legal -->
+ <div class="container mx-auto">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="text-center md:text-left mb-6 md:mb-0">
+                        <p class="text-gray-600 dark:text-gray-300 text-sm">
+                            © 2023 BALDOX. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    
+                    
+                    <!-- Enlaces legales -->
+                    <div class="flex flex-wrap justify-center gap-4 mt-6 md:mt-0">
+                        <a href="#" class="text-gray-600 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400 text-sm">Términos</a>
+                        <a href="#" class="text-gray-600 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400 text-sm">Privacidad</a>
+                        <a href="#" class="text-gray-600 hover:text-indigo-600 dark:text-gray-400 dark:hover:text-indigo-400 text-sm">Licencia</a>
+                    </div>
+                </div>
+            </div>
     </div>
   </footer>
+    <!-- Modal Dialog -->
+    <div id="modalContainer" class="modal-container fixed inset-0 flex items-center justify-center z-50 opacity-0 transition-opacity duration-300">
+        <div id="modalContent" class="modal-content bg-white dark:bg-dark-800 w-full max-w-md mx-4">
+            <div id="modalHeader" class="modal-header px-6 py-4 rounded-t-lg">
+                <div class="flex items-center">
+                    <i id="modalIcon" class="modal-icon"></i>
+                    <h2 id="modalTitle" class="text-xl font-bold text-white"></h2>
+                </div>
+                <button id="modalClose" class="text-white hover:text-gray-200 text-xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="modalBody" class="modal-body px-6 py-4">
+                <p id="modalMessage" class="text-gray-700 dark:text-gray-300"></p>
+            </div>
+                <div class="modal-footer">
+                    <button id="modalCancel" class="modal-btn-cancel" style="display: none;">
+                        Cancelar
+                    </button>
+                    <button id="modalAction" class="modal-btn-accept">
+                        Aceptar
+                    </button>
+                </div>
+        </div>
+    </div>  
 </body>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script type="module" src="js/app.js"></script>
 </html>
